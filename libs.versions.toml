@@ -1,0 +1,17 @@
+[versions]
+bootVersion = "2.6.7"
+kotlin = "1.6.21"
+
+[libraries]
+guava = { module = "com.google.guava:guava", version = "31.1-jre" }
+bootWeb = { module = "org.springframework.boot:spring-boot-starter-web" }
+jacksonKotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+kotlinReflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+kotlinJdk = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
+bootTest = { module = "org.springframework.boot:spring-boot-starter-test" }
+
+[plugins]
+boot = {id = "org.springframework.boot", version.ref = "bootVersion"}
+dependencyManagement = {id = "io.spring.dependency-management", version = "1.0.11.RELEASE"}
+kotlinJvm = {id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
+kotlinPluginSpring = {id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin"}
