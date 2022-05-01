@@ -1,6 +1,7 @@
 [versions]
 bootVersion = "2.6.7"
 kotlin = "1.6.21"
+feign = "3.1.2"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version = "31.1-jre" }
@@ -9,6 +10,7 @@ jacksonKotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" 
 kotlinReflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
 kotlinJdk = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
 bootTest = { module = "org.springframework.boot:spring-boot-starter-test" }
+feign = { module = "org.springframework.cloud:spring-cloud-starter-openfeign", version.ref = "feign" }
 
 [plugins]
 boot = {id = "org.springframework.boot", version.ref = "bootVersion"}

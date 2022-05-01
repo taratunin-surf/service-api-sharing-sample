@@ -7,8 +7,8 @@ plugins {
     alias(libs.plugins.kotlinPluginSpring)
 }
 
-group = "samples"
-version = "0.0.1-SNAPSHOT"
+group "samples"
+version "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
@@ -16,12 +16,9 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.jacksonKotlin)
-    implementation(libs.kotlinReflect)
     implementation(libs.kotlinJdk)
-    testImplementation(libs.bootTest)
-    implementation(libs.guava)
     implementation(libs.bootWeb)
+    implementation(libs.feign)
 }
 
 tasks.withType<KotlinCompile> {
