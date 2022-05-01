@@ -22,7 +22,6 @@ dependencies {
     testImplementation(libs.bootTest)
     implementation(libs.guava)
     implementation(libs.bootWeb)
-    implementation(libs.loadbalancer)
 
     // Implementation own api
     implementation(project(":api-service"))

@@ -11,7 +11,6 @@ kotlinReflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
 kotlinJdk = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
 bootTest = { module = "org.springframework.boot:spring-boot-starter-test" }
 feign = { module = "org.springframework.cloud:spring-cloud-starter-openfeign", version.ref = "feign" }
-loadbalancer = { module = "org.springframework.cloud:spring-cloud-starter-loadbalancer", version.ref = "feign" }
 
 [plugins]
 boot = {id = "org.springframework.boot", version.ref = "bootVersion"}
