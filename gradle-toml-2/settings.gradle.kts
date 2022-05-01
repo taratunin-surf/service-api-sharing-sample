@@ -9,3 +9,5 @@ dependencyResolutionManagement {
         }
     }
 }
+
+include("api-service", "app-service")

@@ -16,9 +16,21 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.jacksonKotlin)
+    implementation(libs.kotlinReflect)
     implementation(libs.kotlinJdk)
+    testImplementation(libs.bootTest)
+    implementation(libs.guava)
     implementation(libs.bootWeb)
-    api(libs.feign)
+    implementation(libs.loadbalancer)
+
+    // Implementation own api
+    implementation(project(":api-service"))
+    /*
+    * Implementation other api service
+    * Hardcode to file as local example, need link to published artifact
+    */
+    implementation(files("../../gradle-toml/api-service/build/libs/api-service-0.0.1-SNAPSHOT-plain.jar"))
 }
 
 tasks.withType<KotlinCompile> {

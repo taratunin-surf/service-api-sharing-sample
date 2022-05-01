@@ -16,12 +16,9 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.jacksonKotlin)
-    implementation(libs.kotlinReflect)
     implementation(libs.kotlinJdk)
-    testImplementation(libs.bootTest)
-    implementation(libs.guava)
     implementation(libs.bootWeb)
+    api(libs.feign)
 }
 
 tasks.withType<KotlinCompile> {
